@@ -1,0 +1,28 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#142033;background:#f5f8fc;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:10;background:rgba(245,248,252,.97);border-bottom:1px solid #d9e2ee;backdrop-filter:blur(8px)}
+.nav{max-width:1150px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:1.5px;color:#10233d}.logo span{color:#1769aa}
+.nav-links{display:flex;gap:25px;align-items:center;font-weight:700;font-size:.93rem}.nav-cta{background:#1769aa;color:white;padding:10px 17px;border-radius:7px}.menu{display:none;border:0;background:none;font-size:1.6rem}
+.hero{max-width:1150px;margin:auto;min-height:74vh;padding:80px 24px;display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center}
+.eyebrow{font-size:.76rem;font-weight:900;letter-spacing:2px;margin:0 0 12px;color:#1769aa}
+.hero h1{font-size:clamp(3.7rem,8vw,7.3rem);line-height:.88;margin:0 0 25px;letter-spacing:-5px;color:#10233d}
+.hero h1 span{color:#1769aa;text-decoration:underline;text-decoration-thickness:7px;text-underline-offset:8px}
+.hero-text{font-size:1.18rem;max-width:650px;color:#405269}
+.buttons,.contact-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.button{display:inline-block;border:0;cursor:pointer;padding:14px 21px;border-radius:7px;font-weight:800;font-size:1rem}
+.primary{background:#1769aa;color:white}.phone{background:#dbeafe;color:#124d7f;border:2px solid #1769aa}
+.hero-card{background:#1769aa;color:white;border-radius:20px;padding:42px;min-height:320px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 18px 40px rgba(23,105,170,.2);transform:rotate(2deg)}
+.hero-card .eyebrow{color:#dceeff}.season-badge{font-size:4rem}.hero-card h2{font-size:2.4rem;line-height:1.05;margin:12px 0 7px}
+.intro{max-width:900px;margin:auto;padding:80px 24px 95px}.intro h2{font-size:clamp(2.5rem,5vw,4.4rem);line-height:1;letter-spacing:-2px;margin:0 0 20px;color:#10233d}.intro h2 span{background:#1769aa;color:white;padding:0 8px}.intro>p:last-child{max-width:650px;font-size:1.15rem;color:#405269}
+.season{padding:95px 24px}.fall{background:#e5eef8}.spring{background:#dcefe2}
+.season-header{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:45px}.season-header h2{font-size:clamp(2.7rem,5vw,4.5rem);line-height:.98;letter-spacing:-2px;margin:0;color:#10233d}.season-header>p{font-size:1.1rem;color:#405269}
+.cards{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;padding:30px;border-radius:15px;border:1px solid #d7e1ed;box-shadow:0 7px 18px rgba(18,47,75,.05)}.icon{font-size:2.4rem}.card h3{font-size:1.35rem;margin:12px 0 7px;color:#10233d}.card p{margin:0;color:#58697d}
+.year-round{max-width:1100px;margin:auto;padding:100px 24px;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.year-round h2{font-size:clamp(2.6rem,5vw,4.3rem);line-height:1;letter-spacing:-2px;margin:0;color:#10233d}.dryer{background:#10233d;color:white;padding:38px;border-radius:16px}.dryer h3{font-size:1.7rem}.dryer a{text-decoration:underline;font-weight:800;color:#a9d8ff}
+.how{padding:90px 24px;background:#eaf1f8}.section-heading{text-align:center;margin:0 auto 50px}.section-heading h2{font-size:clamp(2.4rem,5vw,4rem);line-height:1;margin:0;color:#10233d}.steps{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:35px}.steps strong{font-size:2rem;color:#1769aa}.steps h3{margin:10px 0 5px;color:#10233d}.steps p{margin:0;color:#58697d}
+.quote-section{background:#10233d;color:white;padding:90px 24px}.quote-content{max-width:760px;margin:auto}.quote-content .eyebrow{color:#83c7f5}.quote-content h2{font-size:clamp(2.7rem,6vw,4.5rem);line-height:1;letter-spacing:-2px;margin:0 0 18px}.quote-section form{display:grid;gap:17px;margin-top:35px}label{font-weight:700;display:grid;gap:7px}input,textarea{width:100%;padding:14px;border-radius:7px;border:1px solid #aaa;font:inherit}.email{background:white;color:#10233d}.form-note{font-size:.82rem;color:#aebdce}
+footer{max-width:1100px;margin:auto;padding:30px 24px;display:flex;justify-content:space-between;gap:25px;color:#58697d}footer p{margin:3px 0}
+@media(max-width:800px){.menu{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#f5f8fc;padding:20px 24px;flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.hero,.season-header,.year-round{grid-template-columns:1fr}.hero{padding-top:55px}.hero-card{transform:none}.cards,.steps{grid-template-columns:1fr}.intro{padding-top:65px}}
+@media(max-width:500px){.hero h1{letter-spacing:-3px}.season,.year-round{padding-top:70px;padding-bottom:70px}footer{flex-direction:column}}
